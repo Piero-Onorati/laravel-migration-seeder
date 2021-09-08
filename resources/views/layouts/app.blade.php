@@ -10,7 +10,7 @@
 <body>
     
     @include('partials.header')
-    <main>
+    <main style="min-height: 650px">
         @yield('content')
     </main>
     @include('partials.footer')

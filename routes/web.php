@@ -18,5 +18,8 @@ Route::get('/', 'HomeController@index')
 
 Route::get('/products', 'ProductController@products')->name('productpage');
 
+Route::get('/detail/{id}', 'ProductController@show')
+->name('detailpage');
+
 Route::get('/contacts', 'HomeController@contacts')
 ->name('contactpage');

@@ -3,16 +3,12 @@
     
 
 @section('content')
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+  {{-- CAROUSEL --}}
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active"style="height: 500px" data-bs-interval="10000">
-        <img src="{{asset('img/paris.jpg')}}" class="d-block w-100 img-fluid" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100 " alt="...">
+      <div class="carousel-item active" style="height: 580px" data-bs-interval="10000">
+        <img src="{{asset('img/london.jpg')}}" class="img-fluid" style="object-position:bottom;" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -24,4 +20,9 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <div class="container">
+    <h4 class="py-3">Pack your bags, let's go! choose one of our <a href="{{route('productpage')}}">packages...</a> </h4>
+  </div>
+
 @endsection

@@ -12,4 +12,9 @@ class ProductController extends Controller
         return view('products', compact('trips'));
     }
 
+    public function show($key){
+        $trip = Trip::where('id',$key)->first();
+        return view('detail', compact('trip'));
+    }
+
 }
