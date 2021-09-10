@@ -22,14 +22,14 @@
                         {{-- CARD BODY: city, people, button(more details) --}}
                         <div class="card-body">
                             <h5 class="card-text">
-                                <img src="{{asset('img/place.png')}}" style="width: 30px;" alt="place icon">
+                                <img src="{{asset('img/place.gif')}}" style="width: 30px;" alt="place icon">
                                 <span class="ps-3">City:</span> {{$trip['city']}}
                             </h5>
                             <h6>
-                                <img src="{{asset('img/people.png')}}" style="width: 30px;" alt="people icon">
+                                <img src="{{asset('img/users.png')}}" style="width: 30px;" alt="people icon">
                                 <span class="ps-3">People:</span> {{$trip['people']}}
                             </h6>
-                            <a href="{{route('detailpage', ['id'=>$trip->id])}}" class="btn btn-primary mt-2">More Details</a>
+                            <a href="{{route('detailpage', ['id'=>$trip->id])}}" class="btn btn-dark mt-2">More Details</a>
                         </div>
                         {{-- CARD FOOTER: price--}}
                         <div class="card-footer text-muted text-center">

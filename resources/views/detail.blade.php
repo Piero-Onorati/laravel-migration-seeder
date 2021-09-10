@@ -25,24 +25,24 @@
                         <p class="card-text">{{$trip->description}}.</p>
                         {{-- City --}}
                         <h5 class="card-text">
-                            <img src="{{asset('img/place.png')}}" style="width: 30px;" alt="place icon">
+                            <img src="{{asset('img/place.gif')}}" style="width: 30px;" alt="place icon">
                             <span class="ps-3">City:</span> {{$trip->city}}
                         </h5>
                         {{-- People --}}
                         <h5>
-                            <img src="{{asset('img/people.png')}}" style="width: 30px;" alt="people icon">
+                            <img src="{{asset('img/users.png')}}" style="width: 30px;" alt="people icon">
                             <span class="ps-3">People:</span> {{$trip->people}}
                         </h5>
                         {{-- Price --}}
                         <h5 class="card-text">
-                            <img src="{{asset('img/price.png')}}" style="width: 30px;" alt="place icon">
+                            <img src="{{asset('img/price.gif')}}" style="width: 30px;" alt="place icon">
                             <span class="ps-3">Price:</span> {{$trip->price}} $
                         </h5>
                     </div>
 
                     {{-- Card-Footer --}}
                     <div class="card-footer  text-center">
-                        <h6>Validity: <span class="text-primary">{{$trip->validity}}</span></h6>
+                        <h6>Validity: <span class="text-light px-2 py-1 btn-dark rounded">{{$trip->validity}}</span></h6>
                     </div>
 
                 </div>
